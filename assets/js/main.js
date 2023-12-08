@@ -44,13 +44,13 @@ function addEvents() {
     input.addEventListener("change", handle_changeItemQuantity);
   });
 
-  // Add item to cart
+  // Menambahkan item ke keranjang
   let addCart_btns = document.querySelectorAll(".add-cart");
   addCart_btns.forEach((btn) => {
     btn.addEventListener("click", handle_addCartItem);
   });
 
-  // Buy Order
+  // beli pesanan
   const buy_btn = document.querySelector(".btn-buy");
   buy_btn.addEventListener("click", handle_buyOrder);
 }
@@ -71,7 +71,7 @@ function handle_addCartItem() {
     imgSrc,
   };
 
-  // handle item is already exist
+  // menangani item yg sudah di beli
   if (itemsAdded.find((el) => el.title == newToAdd.title)) {
     alert("maaf, Item ini sudah anda pesan");
     return;
