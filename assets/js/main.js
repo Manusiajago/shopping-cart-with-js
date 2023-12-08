@@ -29,7 +29,7 @@ function update() {
   updateTotal();
 }
 
-// =============== ADD EVENTS ===============
+// =============== MENAMBAHKAN  EVENTS ===============
 function addEvents() {
   // Remove items from cart
   let cartRemove_btns = document.querySelectorAll(".cart-remove");
